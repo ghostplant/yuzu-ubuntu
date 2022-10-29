@@ -166,6 +166,8 @@ enum class CalloutFlag : uint32_t {
 };
 
 void GMainWindow::ShowTelemetryCallout() {
+    return;
+
     if (UISettings::values.callout_flags.GetValue() &
         static_cast<uint32_t>(CalloutFlag::Telemetry)) {
         return;
